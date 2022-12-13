@@ -1,4 +1,4 @@
-sci-kit learn
+"sci-kit learn"
 pandas
 numpy
 matplotlib

@@ -1,3 +1,4 @@
 .venv
 notes.txt
 related_paper.pdf
+*.npy
