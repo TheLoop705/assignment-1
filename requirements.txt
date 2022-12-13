@@ -1,3 +1,4 @@
-sklearn
+sci-kit learn
 pandas
 numpy
+matplotlib
