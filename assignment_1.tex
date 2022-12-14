@@ -14,7 +14,8 @@
 \textgreater{Report the time required for training, the set of hyperparameters which were tested, and the final per-class accuracies achieved on the unseen test set (in the form of a confusion matrix).}
 \textgreater{Comment on the performance of each model, and provide an explanation as to why you believe the highest performing model gave the best results.}
 
-# 1 Hidden Layer
+# Vanilla Neural Network
+Except for the stated parameters all others are the default from scikit-learn, e.g. solver='adam', activation='relu', etc.
 Params: 'hidden_layer_sizes': [(10,), (20,), (30,), (40,), (50,)]
 \begin{tabular}{|c c c|}
 \hline
@@ -31,8 +32,6 @@ HL Size & Mean Fit Time & Mean Score \\ [0.5ex]
 (50,) & 163.39s & 0.933744 \\ 
 \hline
 \end{tabular}
-Vanilla Neural Network best hyperparameters: {'hidden_layer_sizes': (40,), 'max_iter': 500, 'random_state': 42}
-Vanilla Neural Network best cross-validation accuracy: 0.935090
 The best performing model was the neural network with 40 neurons.
 \includegraphics[width=0.6\textwidth]{1hiddenlayer_scores.png}
 
@@ -44,16 +43,29 @@ HiddenLayerSize: (40, 40) | 86.75s | test-score: 0.936723
 HiddenLayerSize: (40, 40, 40) | 163.92s | test-score: 0.934984
 HiddenLayerSize: (40, 40, 40, 40) | 249.26s | test-score: 0.932158
 
+Using (40,40) and varying the activation function: \\
+activation:  'relu' | 86.75s | test-score: 0.936723 \\ 
+activation: 'logistic' | 168.04s | test-score: 0.930813 \\ 
+activation: 'tanh' | 164.20s | test-score: 0.937665 \\ 
+activation: 'identity' | 41.14s | test-score: 0.893321 \\ 
+The activation function 'tanh' gave the best results but took double the time as 'relu'.
 
+Considering the time to train the model, a double hidden layer with 30 neurons each, using the relu activation function is a good performing one.
+hidden layer: (30,30), activation: 'relu' results in 101.86s build time and 0.939376 test score.
 
 #SVM
+Except for the stated hyperparameters all others are the default from scikit-learn, e.g. kernel='rbf', etc.
 hyperparameters: 'C': [0.1, 1, 10],
 C: 0.1 | 331.12s | test-score: 0.877185
 C: 1 | 160.40s | test-score: 0.891601
 C: 10 | 148.25s | test-score: 0.906661
 \includegraphics[width=0.6\textwidth]{svm_c_compiled.png}
+The best performing model was the SVM with C=10.
+
+varying 'kernel': ['linear','poly', 'sigmoid'], C: 10, gamma: 'auto'
 
 # Random Forest
+Except for the stated hyperparameters all others are the default from scikit-learn, e.g. criterion='gini', etc.
 N_estimators: 50 | 36.39s | test-score: 0.933821
 N_estimators: 100 | 74.94s | test-score: 0.934926
 N_estimators: 200 | 150.16s | test-score: 0.935503
@@ -72,4 +84,56 @@ With n_estimators = 50 and max_depth = 20
 min_samples_split: 2 | 35.98s | test-score: 0.933984
 min_samples_split: 5 | 34.74s | test-score: 0.934388
 min_samples_split: 10 | 34.60s | test-score: 0.933110
+
+
+n_estimators: 50 | min_samples_split: 2 | max_depth: 10 | 22.33s | test-score: 0.924643 \\
+n_estimators: 50 | min_samples_split: 2 | max_depth: 15 | 30.71s | test-score: 0.932408 \\
+n_estimators: 50 | min_samples_split: 2 | max_depth: 20 | 36.04s | test-score: 0.933984 \\ \\
+n_estimators: 50 | min_samples_split: 5 | max_depth: 10 | 22.69s | test-score: 0.924575 \\
+n_estimators: 50 | min_samples_split: 5 | max_depth: 15 | 30.91s | test-score: 0.932860 \\
+n_estimators: 50 | min_samples_split: 5 | max_depth: 20 | 35.91s | test-score: 0.934388 \\ \\
+n_estimators: 50 | min_samples_split: 10 | max_depth: 10 | 22.65s | test-score: 0.924864 \\
+n_estimators: 50 | min_samples_split: 10 | max_depth: 15 | 31.00s | test-score: 0.932552 \\
+n_estimators: 50 | min_samples_split: 10 | max_depth: 20 | 35.57s | test-score: 0.933110 \\ \\ \\
+
+n_estimators: 100 | min_samples_split: 2 | max_depth: 10 | 44.06s | test-score: 0.924883 \\
+n_estimators: 100 | min_samples_split: 2 | max_depth: 15 | 62.45s | test-score: 0.933225 \\
+n_estimators: 100 | min_samples_split: 2 | max_depth: 20 | 71.87s | test-score: 0.934695 \\ \\
+n_estimators: 100 | min_samples_split: 5 | max_depth: 10 | 46.42s | test-score: 0.925114 \\
+n_estimators: 100 | min_samples_split: 5 | max_depth: 15 | 62.23s | test-score: 0.933292 \\
+n_estimators: 100 | min_samples_split: 5 | max_depth: 20 | 71.88s | test-score: 0.935205 \\ \\
+n_estimators: 100 | min_samples_split: 10 | max_depth: 10 | 45.57s | test-score: 0.925162 \\
+n_estimators: 100 | min_samples_split: 10 | max_depth: 15 | 64.83s | test-score: 0.933273 \\
+n_estimators: 100 | min_samples_split: 10 | max_depth: 20 | 71.10s | test-score: 0.934484 \\ \\ \\
+
+The best performing model is : {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 100} with a fit time of 71.88s and a test score of 0.935205.
+/includegraphics[width=0.6\textwidth]{rf_n_estimators_compiled.png}
+From the above graph, it is clear that the number of estimators and min sample size does not have a significant impact on the performance of the model. 
+However the max_depth has a significant impact on the performance of the model. \\ 
+Considering the time to train the model a random forest with n_estimators = 50, max_depth = 20 and min_samples_split = 5 is a good performing one with 35sec fit time and 0.934 accuracy.
+
+
+\section{Conclusion}
+Vanilla Neural Network confusion matrix:
+Vanilla Neural Network hyperparameters: {'hidden_layer_sizes': (30, 30), 'activation': 'relu', 'max_iter': 500} Accuracy: 0.9393764656133472
+\begin{matrix}
+  17765 & 893\\
+  684 & 6671
+\end{matrix}
+SVM confusion matrix:
+SVM hyperparameters: {'C': 10} Accuracy: 0.908468842501826
+\begin{matrix}
+  17563 & 1095\\
+  1286 & 6069
+\end{matrix}
+Random Forest confusion matrix:
+Random Forest hyperparameters: {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 50} Accuracy: 0.9351862530273325
+\begin{matrix}
+17852 & 806\\
+880 & 6475
+\end{matrix}
+\includegraphics[width=0.3\textwidth]{vnn_confusion_matrix.png}
+\includegraphics[width=0.3\textwidth]{svm_confusion_matrix.png}
+\includegraphics[width=0.3\textwidth]{rf_confusion_matrix.png}
+
 \end{document}
