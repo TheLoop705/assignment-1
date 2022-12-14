@@ -59,7 +59,17 @@ N_estimators: 100 | 74.94s | test-score: 0.934926
 N_estimators: 200 | 150.16s | test-score: 0.935503
 No significant change in performance with the number of estimators.
 
+For n_estimators = 50
+max_depth: 5 | 11.74s | test-score: 0.893965
+max_depth: 10 | 20.93s | test-score: 0.924643
+max_depth: 15 | 29.69s | test-score: 0.932408
+max_depth: 20 | 34.94s | test-score: 0.933984
+max_depth: 25 | 36.65s | test-score: 0.933110
+max_depth: 30 | 37.28s | test-score: 0.933225
+20 is the best performing max_depth.
 
-
-
+With n_estimators = 50 and max_depth = 20
+min_samples_split: 2 | 35.98s | test-score: 0.933984
+min_samples_split: 5 | 34.74s | test-score: 0.934388
+min_samples_split: 10 | 34.60s | test-score: 0.933110
 \end{document}
