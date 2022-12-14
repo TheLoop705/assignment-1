@@ -53,22 +53,32 @@ The activation function 'tanh' gave the best results but took double the time as
 Considering the time to train the model, a double hidden layer with 30 neurons each, using the relu activation function is a good performing one.
 hidden layer: (30,30), activation: 'relu' results in 101.86s build time and 0.939376 test score.
 
+Comment:
+The number of hidden layers helps a neural network to learn complex relationships, however too many hidden layers lead to overfitting which reduces performance.
+It seems like two hidden layers with 30 neurons lead to a model that understands the relationship of the features well.
+The activation functions lie close to each other, I believe the identity functions is the worst performing one as it is a linear function and the data is not linearly separable.
+
 #SVM
 Except for the stated hyperparameters all others are the default from scikit-learn, e.g. kernel='rbf', etc.
-hyperparameters: 'C': [0.1, 1, 10],
-C: 0.1 | 331.12s | test-score: 0.877185
-C: 1 | 160.40s | test-score: 0.891601
-C: 10 | 148.25s | test-score: 0.906661
+varying C on rbf:
+C: 0.1 | 331.12s | test-score: 0.877185 \\
+C: 1 | 160.40s | test-score: 0.891601 \\
+C: 10 | 148.25s | test-score: 0.906661 \\
 \includegraphics[width=0.6\textwidth]{svm_c_compiled.png}
 The best performing model was the SVM with C=10.
 
-varying 'kernel': ['linear','poly', 'sigmoid'], C: 10, gamma: 'auto'
+varying kernel:
 kernel: 'rbf' | 148.25s | test-score: 0.906661
 kernel: 'linear' | 463.95s | test-score: 0.904653
 kernel: 'poly' | 274.41s | test-score: 0.832592
 kernel: 'sigmoid' | 393.91s | test-score: 0.728335
 
 The best parameters are: {'C': 10, 'kernel': 'rbf'}
+
+Comment:
+Regularization encourages the model to find a balance between complexity and accuracy which lead to a better performing model.
+I assume in this example rbf lead to the best results because it does a better job capturing the non-linear relationship between the features and the target.
+And also because 'rbf' is tuned by a single hyperparameter and I did not tune the other models hyperparameters.
 
 # Random Forest
 Except for the stated hyperparameters all others are the default from scikit-learn, e.g. criterion='gini', etc.
@@ -114,10 +124,13 @@ n_estimators: 100 | min_samples_split: 10 | max_depth: 20 | 71.10s | test-score:
 
 The best performing model is : {'max_depth': 20, 'min_samples_split': 5, 'n_estimators': 100} with a fit time of 71.88s and a test score of 0.935205.
 /includegraphics[width=0.6\textwidth]{rf_n_estimators_compiled.png}
-From the above graph, it is clear that the number of estimators and min sample size does not have a significant impact on the performance of the model. 
+From the above graph, where max_depth is shown by hue and size is n_estimators, it is clear that the number of estimators and min sample size does not have a significant impact on the performance of the model. 
 However the max_depth has a significant impact on the performance of the model. \\ 
 Considering the time to train the model a random forest with n_estimators = 50, max_depth = 20 and min_samples_split = 5 is a good performing one with 35sec fit time and 0.934 accuracy.
 
+Comment:
+As seen from the data above the number of estimators or the min_samples_split does not have a significant impact on the performance of the model.
+I believe max_depth has the biggest impact on the performance because it changes how complex of a pattern the model can learn.
 
 \section{Conclusion}
 Vanilla Neural Network confusion matrix:
@@ -138,6 +151,7 @@ Random Forest hyperparameters: {'max_depth': 20, 'min_samples_split': 5, 'n_esti
 17852 & 806\\
 880 & 6475
 \end{matrix}
+Comment: I believe SVM is the worst performing model because it fails to capture the complexity and non-linear relationship of the features. It is also the slowest model to train. \\
 \includegraphics[width=0.3\textwidth]{vnn_confusion_matrix.png}
 \includegraphics[width=0.3\textwidth]{svm_confusion_matrix.png}
 \includegraphics[width=0.3\textwidth]{rf_confusion_matrix.png}
