@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.4)  14 DEC 2022 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.4)  15 DEC 2022 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,15 +22,15 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package color Info: Driver file: pdftex.def on input line 149.
  (c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
  (c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
@@ -45,19 +45,7 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \everycr=\toks17
 \minrowclearance=\skip52
 \rownum=\count193
-) (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
- (c:/texlive/2022/texmf-dist/tex/latex/xcolor/x11nam.def
-File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
-)) (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip53
 
@@ -163,20 +151,20 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 ) (./assignment_1.aux)
 \openout1 = `assignment_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
@@ -230,153 +218,44 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Runaway argument?
-{lightyekernel: 'rbf' & fit-time: 148.25s & test-score: 0.906661 \\ k\ETC.
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:84: Paragraph ended before \CT@rowb was complete.
-<to be read again> 
-                   \par 
-l.84 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+[1
 
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:92: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \section
-             {Random Forest}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:92: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \section
-             {Random Forest}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:130: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 \section
-              {Conclusion}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:130: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 \section
-              {Conclusion}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (12.5054pt too wide) in paragraph at lines 93--130
-[] \OT1/cmr/m/n/10 The best per-form-ing model is: 'max-
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 132.
-(c:/texlive/2022/texmf-dist/tex/latex/base/omscmr.fd
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 139.
+ (c:/texlive/2022/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:138: Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.138 S
-       VM-hyperparameters: \{'C': 10, kernel='rbf'\} Accuracy: 0.90846884250...
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:144: Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.144 R
-       andom Forest hyperparameters: \{'max-depth': 20, 'min-samples-split':...
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:149: Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.149 I
-        believe SVM is the worst performing
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:152: Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.152 \begin
-            {figure}[hbp]
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-<images//vnn_confusion_matrix.png, id=1, 388.8126pt x 312.2064pt>
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 139.
+<images//vnn_confusion_matrix.png, id=9, 388.8126pt x 312.2064pt>
 File: images//vnn_confusion_matrix.png Graphic file (type png)
 <use images//vnn_confusion_matrix.png>
-Package pdftex.def Info: images//vnn_confusion_matrix.png  used on input line 153.
+Package pdftex.def Info: images//vnn_confusion_matrix.png  used on input line 161.
 (pdftex.def)             Requested size: 151.76854pt x 121.86957pt.
-<images//svm_confusion_matrix.png, id=3, 388.8126pt x 312.2064pt>
+<images//svm_confusion_matrix.png, id=11, 388.8126pt x 312.2064pt>
 File: images//svm_confusion_matrix.png Graphic file (type png)
 <use images//svm_confusion_matrix.png>
-Package pdftex.def Info: images//svm_confusion_matrix.png  used on input line 154.
+Package pdftex.def Info: images//svm_confusion_matrix.png  used on input line 162.
 (pdftex.def)             Requested size: 151.76854pt x 121.86957pt.
-<images//rf_confusion_matrix.png, id=4, 388.8126pt x 312.2064pt>
+<images//rf_confusion_matrix.png, id=12, 388.8126pt x 312.2064pt>
 File: images//rf_confusion_matrix.png Graphic file (type png)
 <use images//rf_confusion_matrix.png>
-Package pdftex.def Info: images//rf_confusion_matrix.png  used on input line 155.
+Package pdftex.def Info: images//rf_confusion_matrix.png  used on input line 163.
 (pdftex.def)             Requested size: 151.76854pt x 121.86957pt.
+ [2 <./images//vnn_confusion_matrix.png> <./images//svm_confusion_matrix.png> <./images//rf_confusion_matrix.png>] (./assignment_1.aux) ) 
+Here is how much of TeX's memory you used:
+ 2855 strings out of 474968
+ 45054 string characters out of 5780081
+ 415520 words of memory out of 5000000
+ 24353 multiletter control sequences out of 15000+600000
+ 470881 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,7n,62p,346b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on assignment_1.pdf (2 pages, 118538 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:157: LaTeX Error: \begin{tabular} on input line 76 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-c:/Users/sulta/OneDrive/Desktop/CCE5225 - Machine Learning and Pattern Recognition Algorithms/assignment 1/assignment_1.tex:157: Improper \prevdepth.
-\newpage ...everypar {}\fi \par \ifdim \prevdepth 
-                                                  >\z@ \vskip -\ifdim \prevd...
-l.157 \end{document}
-                    
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode;
