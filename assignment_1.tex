@@ -63,6 +63,12 @@ C: 10 | 148.25s | test-score: 0.906661
 The best performing model was the SVM with C=10.
 
 varying 'kernel': ['linear','poly', 'sigmoid'], C: 10, gamma: 'auto'
+kernel: 'rbf' | 148.25s | test-score: 0.906661
+kernel: 'linear' | 463.95s | test-score: 0.904653
+kernel: 'poly' | 274.41s | test-score: 0.832592
+kernel: 'sigmoid' | 393.91s | test-score: 0.728335
+
+The best parameters are: {'C': 10, 'kernel': 'rbf'}
 
 # Random Forest
 Except for the stated hyperparameters all others are the default from scikit-learn, e.g. criterion='gini', etc.
